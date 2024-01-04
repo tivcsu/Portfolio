@@ -78,7 +78,7 @@ export default function AboutMe() {
           className="section-column about-section scroll">
         <p className='about-title'>About</p>
         <p className='about-text'>
-            Over 3.5 years of experience as a Front-End Developer<br/>
+            Over 4 years of experience as a Front-End Developer<br/>
             Skilled in Vue.js and ReactJS with TypeScript for development<br/>
             Expertise in UI/UX design, demonstrated through successful individual(e.g. https://drnagymelaniaugyved.hu/) and team(e.g.https://koncertbooking.com/) projects<br/>
             Experienced in Agile and Waterfall development methodologies<br/>
