@@ -1,0 +1,145 @@
+.header {
+  height: calc(100vh - var(--navbar-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.header__title {
+  font-size: 120px;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  line-height: 1;
+  max-width: 500px;
+}
+
+.header__sub-title {
+  font-weight: 100;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  letter-spacing: 5px;
+  max-width: 220px;
+  font-size: 30px;
+}
+@media(max-width: 1000px) {
+  .header__title {
+    font-size: 80px;
+  }
+  .header__sub-title {
+    font-size: 24px;
+  }
+}
+@media(max-width: 600px) {
+  .header__title {
+    font-size: 50px;
+  }
+  .header__sub-title {
+    font-size: 18px;
+  }
+}
+.arrow {
+  background: #fff;
+  height: 3px;
+  width: 30px;
+  margin: 0 15px;
+  position: relative;
+  cursor: pointer; 
+}
+.arrow:before, .arrow:after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  height: 3px;
+  width: 15px; 
+}
+.arrow:before {
+  right: -3px;
+  bottom: -4px;
+  transform: rotate(-45deg); 
+}
+.arrow:after {
+  right: -3px;
+  top: -4px;
+  transform: rotate(45deg); 
+}
+
+.learn-more {
+  display: flex;
+  position: absolute;
+  left: -40px;
+  align-items: center;
+  cursor: pointer;
+  transform: rotate(90deg);
+  bottom: 60px; 
+}
+
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 80px;
+  gap: 24px;
+}
+.home-section__title {
+  font-size: 80px;
+  letter-spacing: 5px;
+  line-height: 1;
+  font-weight: 500;
+}
+.home-section__text {
+  font-weight: 400;
+  font-size: 20px;
+  max-width: 400px;
+  margin-bottom: 45px;
+  position: relative;
+}
+.home-section__contact {
+  font-weight: 200;
+  font-size: 20px;
+  position: relative;
+}
+
+.section-column {
+  flex: 1;
+}
+
+@media(max-width: 600px) {
+  .home-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .home-section__title {
+    font-size: 50px;
+  }
+  .home-section__text {
+    font-size: 16px;
+  }
+  .header__sub-title {
+    font-size: 18px;
+  }
+}
+
+.skill__title {
+  display: inline-flex;
+  font-size: 24px;
+  font-weight: 100;
+  border-bottom: 2px solid #bb3e03;
+  padding: 0 30px 0 0;
+  margin-bottom: 24px;
+}
+.skill__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.skill__item {
+  font-size: 16px;
+  border: 1px solid #001219;
+  background-color: #001219;
+  padding: 6px 18px;
+  border-radius: 32px;
+}
+
